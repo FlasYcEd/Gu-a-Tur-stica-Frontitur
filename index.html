@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guía Turística Frontitur</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="imagenes/frontitur-1.png">
+</head>
+<body>
+    <header class="text-center">
+        <h1>"Frontitur Maravillas Por Descubrir"</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" onclick="loadPage('paginas/invitacion.html')">
+                <img src="/imagenes/frontitur.png" alt="" style="width: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="" onclick="loadPage('paginas/Quienesomos.html')">¿Quienes somos?</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sitios Turísticos</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="sitiosTuristicosList"></ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sitios De Interés</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown2" id="sitiosInteresList"></ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="loadPage('paginas/Gastronomia.html')">Gastronomía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="loadPage('paginas/Restaurantes.html')">Restaurantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="loadPage('paginas/Hoteles.html')">Hoteles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="loadPage('paginas/Vacacional.html')">Turismo Vacacional</a>
+                    </li>
+                    <img src="/imagenes/fron2.png" alt="" style="width: 580px;">
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="row">
+            <section id="contenido" class="col-md-7"></section>
+            <aside class="aside col-md-4">
+                <img src="imagenes/Quieres venir a Frontino.png " width="415" height="685">
+                <img src="imagenes/mosca.png" width="415" height="685">
+             </aside>
+        </div>
+    </div>
+    
+    
+    <footer class="text-center py-4">
+        <h2>¡Comunicate con nosotros!</h2>
+        <div class="d-flex justify-content-center text-right">
+            <a href="https://www.instagram.com/frontitur/" class="mx-" target="_blank">
+                <img class="instagram" src="imagenes/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/frontitur?locale=es_LA" class="mx-2" target="_blank">
+                <img class="facebook" src="imagenes/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=573122532603" class="mx-2" target="_blank">
+                <img class="what" src="imagenes/whats.png" alt="WhatsApp">
+            </a>
+        </div>
+        <p> © 2024 Proyecto - Guía Turística Frontitur. Contacto: frontitur8@gmail.com </p>
+    </footer>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadPage('paginas/Quienesomos.html');
+        });
+    </script>
+</body>
+</html>
