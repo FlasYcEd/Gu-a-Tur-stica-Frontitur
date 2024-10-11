@@ -3,8 +3,9 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     background-color: #f8f9fa;
+    font-weight: bold;
 }
 
 header {
@@ -17,6 +18,10 @@ header {
 
 header h1 {
     font-size: 2.5rem;
+}
+
+p h2 {
+    padding: 0 20px;
 }
 
 .navbar-brand {
@@ -35,12 +40,15 @@ header h1 {
 .dropdown-menu {
     border-radius: 0.5rem;
 }
+
 #contenido {
     background: #FFFFFF;
     padding: 0.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-right: 1rem;
+    flex: 1;
+    max-width: 100%;
 }
 
 .aside {
@@ -48,6 +56,21 @@ header h1 {
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-left: 3rem;
+    display: none;
+    max-width: 30%;
+    transition: max-width 0.3s ease;
+}
+
+.aside.visible {
+    display: block;
+}
+
+.aside-hidden #contenido {
+    max-width: 100%;
+}
+
+.aside-visible #contenido {
+    max-width: 70%;
 }
 
 footer {
