@@ -3,9 +3,9 @@
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: #f8f9fa;
-    font-weight: bold;
+    background-image: url("/imagenes/fondo.jpeg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header {
