@@ -42,7 +42,8 @@ p h2 {
 }
 
 #contenido {
-    background: #FFFFFF;
+    background: #00FF0000 ;
+    color:#FFFFFF;
     padding: 0.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
